@@ -14,10 +14,10 @@ int main() {
     printf("Please enter 10 different non-negative integers:\n");
 
     for (counter = 0; counter < 10; ++counter) {
-        scanf("%d", &user_input);
+        scanf_s("%d", &user_input);
 
         if (user_input < 0) {
-            printf("Invalid input, please enter a non-negative integer.\n");
+            printf_s("Invalid input, please enter a non-negative integer.\n");
             --counter;
             continue;
         }
@@ -37,18 +37,18 @@ int main() {
         }
     }
 
-    printf("The largest number is: %d\n", largest);
-    printf("The second largest number is: %d\n", largest_2nd);
-    printf("The smallest number is: %d\n", smallest);
-    printf("The second smallest number is: %d\n", smallest_2nd);
+    printf_s("The largest number is: %d\n", largest);
+    printf_s("The second largest number is: %d\n", largest_2nd);
+    printf_s("The smallest number is: %d\n", smallest);
+    printf_s("The second smallest number is: %d\n", smallest_2nd);
 
     // Part2
     int n;
-    printf("Please enter a non-negative integer (1-10) to calculate its factorial: ");
-    scanf("%d", &n);
+    printf_s("Please enter a non-negative integer (1-10) to calculate its factorial: ");
+    scanf_s("%d", &n);
 
     if (n < 1 || n > 10) {
-        printf("Invalid input. Please enter a number between 1 and 10.\n");
+        printf_s("Invalid input. Please enter a number between 1 and 10.\n");
         return 1;
     }
 
@@ -57,7 +57,7 @@ int main() {
         factorial *= i;
     }
 
-    printf("The factorial of %d is %d\n", n, factorial);
+    printf_s("The factorial of %d is %d\n", n, factorial);
 
     return 0;
 }

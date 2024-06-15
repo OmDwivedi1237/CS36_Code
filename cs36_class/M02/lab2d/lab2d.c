@@ -8,13 +8,13 @@ int main() {
     char userChar;
 
     printf("Enter the size of the square of asterisks: ");
-    scanf("%d", &size);
+    scanf_s("%d", &size);
     printSquare(size);
 
     printf("Enter a character: ");
-    scanf(" %c", &userChar);
+    scanf_s(" %c", &userChar);
     printf("Enter the size of the square: ");
-    scanf("%d", &size);
+    scanf_s("%d", &size);
     printSquare_char(userChar, size);
 
     return 0;
