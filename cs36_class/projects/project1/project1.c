@@ -37,8 +37,12 @@ void printNameASCII() {
 //----Part 3----
 void calculateAndPrintFloatStats() {
     float num1, num2, num3;
-    printf("\n\nEnter three different floating-point numbers: ");
-    scanf_s("%f %f %f", &num1, &num2, &num3);
+    printf("Pick the first floating-point number: ");
+    scanf("%f", &num1);
+    printf("Pick the second floating-point number: ");
+    scanf("%f", &num2);
+    printf("Pick the third floating-point number: ");
+    scanf("%f", &num3);
 
     float sum = num1 + num2 + num3;
     float average = sum / 3;
@@ -56,5 +60,4 @@ void calculateAndPrintFloatStats() {
     printf("Average: %.2f\n", average);
     printf("Product: %.2f\n", product);
     printf("Smallest: %.2f\n", smallest);
-    printf("Largest: %.2f\n", largest);
-}
+    printf("Largest: %.2f\n", largest);}
