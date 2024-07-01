@@ -6,8 +6,8 @@ int main () {
   int a = 1427;
   double b = 1427.0;
 
-  printf("PART 1\n\na in octal is: 0%o\n", a);
-  printf("a in hexadecimal is: 0X%X\n", a);
+  printf("PART 1\n\na in octal is: %o\n", a);
+  printf("a in hexadecimal is: %X \n", a);
   printf("a in hexadecimal is also: 0x%x\n", a);
 
   printf("b wihtout a decimal point is: %.0f\n", b);
